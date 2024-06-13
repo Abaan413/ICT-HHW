@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.goal {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.goal img {
+    width: 100px;
+    height: 100px;
+}
+
+.goal h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+#intro, #about {
+    margin: 20px 0;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+    header, footer {
+        text-align: left;
+        padding: 10px 50px;
+    }
+
+    header nav ul li {
+        margin: 0 20px;
+    }
+
+    .goal {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .goal img {
+        width: 150px;
+        height: 150px;
+    }
+}
